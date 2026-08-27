@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="rtl-mode">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta_title">صالون جوردان | صالون حلاقة ورعاية رجالية فاخرة</title>
+  <meta name="description"
+    content="استمتع بتجربة حلاقة عالمية المستوى، قصات فيد متقنة وعناية ملكية باللحية في صالون جوردان."
+    data-i18n="meta_desc">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Jordan Saloon | Luxury Barber & Grooming Studio">
+  <meta property="og:description" content="Precision. Style. Identity. World-class grooming studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo/jordan_saloon_logo.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/jordan_saloon_mark.svg">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="rtl-mode">
+
+  <!-- ==========================================================================
+       MANDATORY LANGUAGE SELECTION SPLASH MODAL
+       ========================================================================== -->
+
+  <!-- ==========================================================================
+       MANDATORY LANGUAGE SELECTION SPLASH MODAL
+       ========================================================================== -->
+
+  <div class="lang-modal-overlay active" id="langChoiceModal" role="dialog" aria-modal="true"
+    aria-labelledby="langModalTitle">
+    <!-- Cinematic Background Video Playing At Start -->
+    <div class="lang-modal-video-bg">
+      <video class="lang-modal-video" autoplay muted loop playsinline preload="auto"
+        poster="assets/images/hero_cinematic.png">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="lang-modal-overlay-dark"></div>
+
+    <div class="lang-modal-card">
+      <div class="lang-modal-logo-wrap">
+        <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon Logo" class="lang-modal-logo">
+      </div>
+      <span class="lang-modal-tag" data-i18n="lang_modal_welcome">JORDAN SALOON · STUDIO</span>
+      <h2 class="lang-modal-title" id="langModalTitle" data-i18n="lang_modal_title">اختر لغة التصفح</h2>
+      <p class="lang-modal-sub" data-i18n="lang_modal_sub">يرجى اختيار لغتك المفضلة لبدء تجربة الصالون الفاخرة.</p>
+
+      <div class="lang-modal-grid">
+        <!-- Arabic Button -->
+        <button type="button" class="lang-modal-choice-btn" data-lang="ar">
+          <span class="lang-choice-native">العربية</span>
+          <span class="lang-choice-code">AR</span>
+        </button>
+
+        <!-- Kurdish Button -->
+        <button type="button" class="lang-modal-choice-btn" data-lang="ku">
+          <span class="lang-choice-native">کوردی</span>
+          <span class="lang-choice-code">KU</span>
+        </button>
+
+        <!-- English Button -->
+        <button type="button" class="lang-modal-choice-btn" data-lang="en">
+          <span class="lang-choice-native">English</span>
+          <span class="lang-choice-code">EN</span>
+        </button>
+      </div>
+
+      <!-- Instagram Link Below Language Selector -->
+      <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+        target="_blank" rel="noopener noreferrer" class="lang-modal-instagram">
+        <svg class="instagram-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span class="lang-insta-label">Instagram:</span>
+        <span class="lang-insta-handle">@saloon_jordan</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Jordan Saloon Home">
+        <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">JORDAN SALOON</span>
+          <span class="brand-sub" data-i18n="hero_brand_sub">صالون جوردان</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">عن الصالون</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">الخدمات</a>
+        <a href="#transformation" class="nav-link" data-i18n="nav_transformation">التحولات</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">معرض الصور</a>
+        <a href="#team" class="nav-link" data-i18n="nav_team">الحلاقون</a>
+        <a href="#testimonials" class="nav-link" data-i18n="nav_reviews">آراء العملاء</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+
+      <!-- Right Header Actions (Language Switcher + Book CTA) -->
+      <div class="header-actions">
+        <!-- Compact Luxury Language Selector -->
+        <div class="lang-switcher" role="group" aria-label="Language Selector">
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang-divider">·</span>
+          <button class="lang-btn active" data-lang="ar" aria-pressed="true">AR</button>
+          <span class="lang-divider">·</span>
+          <button class="lang-btn" data-lang="ku" aria-pressed="false">KU</button>
+        </div>
+
+        <!-- Book Appointment Button -->
+        <a href="#booking" class="btn btn-primary btn-sm header-cta" data-i18n="nav_book_btn">احجز موعدك</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Navigation Menu">&times;</button>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link active" data-i18n="nav_home">الرئيسية</a></li>
+      <li><a href="#about" class="mobile-nav-link" data-i18n="nav_about">عن الصالون</a></li>
+      <li><a href="#services" class="mobile-nav-link" data-i18n="nav_services">الخدمات</a></li>
+      <li><a href="#transformation" class="mobile-nav-link" data-i18n="nav_transformation">التحولات</a></li>
+      <li><a href="#gallery" class="mobile-nav-link" data-i18n="nav_gallery">معرض الصور</a></li>
+      <li><a href="#team" class="mobile-nav-link" data-i18n="nav_team">الحلاقون</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link" data-i18n="nav_reviews">آراء العملاء</a></li>
+      <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">تواصل معنا</a></li>
+    </ul>
+
+    <!-- Mobile Drawer Language Selector -->
+    <div class="lang-switcher mobile-lang-switcher" style="margin-bottom: 2rem;">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-divider">·</span>
+      <button class="lang-btn active" data-lang="ar">AR</button>
+      <span class="lang-divider">·</span>
+      <button class="lang-btn" data-lang="ku">KU</button>
+    </div>
+
+    <a href="#booking" class="btn btn-primary" style="width: 100%; max-width: 280px;" data-i18n="nav_book_btn">احجز
+      موعدك</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION (CINEMATIC BACKGROUND VIDEO / EDITORIAL COMPOSITION)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-video-container">
+        <!-- Ambient Canvas for smooth background loading -->
+        <canvas id="heroAmbientCanvas" class="hero-ambient-canvas"></canvas>
+
+        <!-- Video Player -->
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto"
+          poster="assets/images/hero_cinematic.png">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Cinematic Vignettes & Bottom Gradient Overlays -->
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+
+      <!-- Minimal Expensive Hero Content -->
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <span class="hero-badge-dot"></span>
+          <span class="hero-badge-text" data-i18n="hero_brand_sub">صالون جوردان</span>
+          <span class="hero-badge-dot"></span>
+        </div>
+
+        <h1 class="hero-title" data-i18n="hero_title">أناقة ، تغيير ، هوية</h1>
+        <p class="hero-desc" data-i18n="hero_desc">حيث تلتقي الحلاقة الراقية بالعناية الرجالية الاستثنائية.</p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary hero-btn-main" data-i18n="hero_cta_book">احجز موعدك الآن</a>
+          <a href="#gallery" class="btn btn-outline hero-btn-sub" data-i18n="hero_cta_explore">استكشف أعمالنا</a>
+        </div>
+      </div>
+
+      <!-- Minimal Luxury Scroll Indicator -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Scroll Down">
+        <span class="hero-scroll-text" data-i18n="hero_scroll">SCROLL</span>
+        <div class="hero-scroll-line">
+          <div class="hero-scroll-line-runner"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         2. ABOUT SECTION (EDITORIAL COMPOSITION)
+         ========================================================================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Editorial Image -->
+          <div class="about-image-wrapper">
+            <img src="assets/images/about_master.png" alt="Jordan Saloon Master Barbering" class="about-img"
+              id="aboutImg">
+            <div class="about-img-overlay"></div>
+            <div class="about-floating-badge">
+              <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon Emblem" class="about-badge-icon">
+              <span class="about-badge-title" data-i18n="about_badge">استوديو جوردان للحلاقة</span>
+            </div>
+          </div>
+
+          <!-- Editorial Text & Philosophies -->
+          <div class="about-text-col">
+            <span class="section-tag" data-i18n="about_tag">الحرفية والأصالة</span>
+            <h2 class="section-title" data-i18n="about_title">حيث تلتقي الفخامة بالإتقان</h2>
+            <p data-i18n="about_p1">في صالون جوردان، ترتقي الحلاقة إلى مستوى الفن. نجمع بين مهارة الشفرة التقليدية وأحدث
+              أساليب التصفيف العصرية لنمنح كل رجل هوية خاصة ومظهراً لا يُنسى.</p>
+            <p data-i18n="about_p2">كل جلسة حلاقة هي تجربة استرخاء متكاملة في بيئة داكنة فاخرة صُممت لتوفر أعلى درجات
+              الراحة والاهتمام بأدق التفاصيل.</p>
+
+            <div class="about-features-grid">
+              <div class="about-feature-item">
+                <span class="about-feature-title" data-i18n="about_stat1_num">دقة متناهية</span>
+                <span class="about-feature-desc" data-i18n="about_stat1_label">اهتمام تام بأدق التفاصيل</span>
+              </div>
+              <div class="about-feature-item">
+                <span class="about-feature-title" data-i18n="about_stat2_num">خبرة وإتقان</span>
+                <span class="about-feature-desc" data-i18n="about_stat2_label">أحدث أساليب وقصات الحلاقة</span>
+              </div>
+              <div class="about-feature-item">
+                <span class="about-feature-title" data-i18n="about_stat3_num">فخامة</span>
+                <span class="about-feature-desc" data-i18n="about_stat3_label">تجربة صالون استثنائية</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. SERVICES & CURATED MENU (PRICES: UNKNOWN YET)
+         ========================================================================== -->
+    <section class="section-padding" id="services" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="services_tag">خدماتنا المميزة</span>
+          <h2 class="section-title" data-i18n="services_title">قائمة العناية والحلاقة</h2>
+          <p class="section-subtitle" data-i18n="services_subtitle">اختر من بين خدماتنا المتقنة المنفذة بأيدي نخبة من
+            الحلاقين المحترفين.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="services-tabs">
+          <button class="tab-btn active" data-filter="all" data-i18n="tab_all">جميع الخدمات</button>
+          <button class="tab-btn" data-filter="hair" data-i18n="tab_hair">قصات الشعر</button>
+          <button class="tab-btn" data-filter="beard" data-i18n="tab_beard">العناية باللحية</button>
+          <button class="tab-btn" data-filter="vip" data-i18n="tab_vip">الباقات وVIP</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- Item 1: Classic Haircut -->
+          <div class="service-card" data-category="hair">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_hair1_name">قصة شعر كلاسيكية فاخرة</h3>
+              <span class="service-price" data-i18n="srv_hair1_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_hair1_desc">استشارة خاصة، قص احترافي بالمقص والماكينة، تنظيف الرقبة
+              بالموس، غسيل وتصفيف نهائي.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_hair1_time">40 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="classic_haircut"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 2: Master Skin Fade -->
+          <div class="service-card" data-category="hair">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_hair2_name">سكين فيد احترافي (Skin Fade)</h3>
+              <span class="service-price" data-i18n="srv_hair2_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_hair2_desc">تدرج ناعم ودقيق من الصفر إلى الطول المطلوب مع تنعيم
+              الشفرة الخاصة.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_hair2_time">45 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="skin_fade"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 3: Modern Taper Fade -->
+          <div class="service-card" data-category="hair">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_hair3_name">تيبر فيد عصري (Taper Fade)</h3>
+              <span class="service-price" data-i18n="srv_hair3_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_hair3_desc">تحديد دقيق للجوانب ومؤخرة الرقبة مع الحفاظ على كثافة
+              الشعر العلوية وتناسقها.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_hair3_time">40 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="taper_fade"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 4: Scissor Cut -->
+          <div class="service-card" data-category="hair">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_hair4_name">قص بالمقص اليدوي فقط</h3>
+              <span class="service-price" data-i18n="srv_hair4_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_hair4_desc">قص يدوي بالكامل مصمم ليتناسب مع اتجاه نمو الشعر وشكل
+              الوجه.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_hair4_time">50 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="scissor_cut"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 5: Beard Sculpt -->
+          <div class="service-card" data-category="beard">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_beard1_name">نحت وتشذيب اللحية</h3>
+              <span class="service-price" data-i18n="srv_beard1_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_beard1_desc">تقليم اللحية، ضبط الحدود، إزالة التكتلات بالمقص وتغذية
+              اللحية بأرقى الزيوت.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_beard1_time">30 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="beard_sculpt"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 6: Hot Towel Shave -->
+          <div class="service-card" data-category="beard">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_beard2_name">حلاقة ملكية بالمنشفة الساخنة</h3>
+              <span class="service-price" data-i18n="srv_beard2_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_beard2_desc">رغوة دافئة، علاج بالبخار والمنشفة المعطرة، وحلاقة دقيقة
+              بالشفرة التقليدية.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_beard2_time">35 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="hot_towel_shave"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 7: Razor Lineup -->
+          <div class="service-card" data-category="beard">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_beard3_name">تحديد حواف اللحية بالموس</h3>
+              <span class="service-price" data-i18n="srv_beard3_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_beard3_desc">تحديد فائق الحدة لخطوط الخد والرقبة لمظهر نظيف ومحدد
+              بدقة.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_beard3_time">20 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="razor_lineup"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 8: Jordan Royal Package -->
+          <div class="service-card" data-category="vip">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_vip1_name">باقة جوردان الملكية</h3>
+              <span class="service-price" data-i18n="srv_vip1_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_vip1_desc">قصة شعر فيد متقنة، نحت اللحية، جلسة المنشفة الساخنة، غسيل
+              علاجي وتصفيف كامل.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_vip1_time">75 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="jordan_royal"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+
+          <!-- Item 9: VIP Grooming -->
+          <div class="service-card" data-category="vip">
+            <div class="service-header">
+              <h3 class="service-name" data-i18n="srv_vip2_name">جلسة العناية الشاملة VIP</h3>
+              <span class="service-price" data-i18n="srv_vip2_price">لم يُحدد بعد</span>
+            </div>
+            <p class="service-desc" data-i18n="srv_vip2_desc">تحول مظهري شامل مع معالجة فروة الرأس، تنظيف بشرة الوجه
+              وتصفيف احترافي.</p>
+            <div class="service-footer">
+              <span class="service-time" data-i18n="srv_vip2_time">90 دقيقة</span>
+              <a href="#booking" class="service-book-link service-book-trigger" data-service-val="vip_grooming"
+                data-i18n="book_service_btn">اختر واحجز &larr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. FEATURED WORK / INTERACTIVE TRANSFORMATION SLIDER
+         ========================================================================== -->
+    <section class="section-padding" id="transformation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="trans_tag">تحولات استثنائية</span>
+          <h2 class="section-title" data-i18n="trans_title">قوة الدقة والإتقان</h2>
+          <p class="section-subtitle" data-i18n="trans_subtitle">اسحب المؤشر لمشاهدة الفارق المذهل قبل وبعد لمسة صالون
+            جوردان.</p>
+        </div>
+
+        <div class="transformation-container">
+          <div class="ba-slider-box" id="baSliderBox">
+            <!-- After (Base) Image -->
+            <img src="assets/images/trans_after.png" alt="Haircut After Transformation" class="ba-img">
+            <span class="ba-label ba-label-after" data-i18n="trans_label_after">بعد</span>
+
+            <!-- Before (Overlay) Image -->
+            <div class="ba-before-wrap" id="baBeforeWrap">
+              <img src="assets/images/trans_before.png" alt="Haircut Before Transformation" class="ba-img">
+              <span class="ba-label ba-label-before" data-i18n="trans_label_before">قبل</span>
+            </div>
+
+            <!-- Draggable Center Handle -->
+            <div class="ba-handle" id="baHandle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="transformation-meta">
+            <h3 class="trans-card-title" data-i18n="trans_card_title">تحول سكين فيد وتحديد اللحية</h3>
+            <p class="trans-card-desc" data-i18n="trans_card_desc">تدرج سكين فيد ناعم مع تحديد هندسي حاد للحية لإبراز
+              ملامح الوجه.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. GALLERY / EDITORIAL MASONRY PORTFOLIO
+         ========================================================================== -->
+    <section class="section-padding" id="gallery" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="gallery_tag">الأعمال والإبداع</span>
+          <h2 class="section-title" data-i18n="gallery_title">معرض القصات والأعمال</h2>
+          <p class="section-subtitle" data-i18n="gallery_subtitle">تشكيلة حقيقية من قصات الشعر، التدرجات وتفاصيل العمل
+            في الاستوديو.</p>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="gallery-filters">
+          <button class="gallery-filter-btn active" data-filter="all" data-i18n="filter_all">الكل</button>
+          <button class="gallery-filter-btn" data-filter="fades" data-i18n="filter_fades">تدرجات الفيد</button>
+          <button class="gallery-filter-btn" data-filter="sciss" data-i18n="filter_sciss">قصات المقص</button>
+          <button class="gallery-filter-btn" data-filter="beard" data-i18n="filter_beard">تصميم اللحية</button>
+          <button class="gallery-filter-btn" data-filter="studio" data-i18n="filter_studio">داخل الصالون</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Featured Large Tile -->
+          <div class="gallery-item featured" data-category="fades">
+            <img src="assets/images/gallery_1.png" alt="Skin Fade Haircut" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_fades">تدرجات الفيد</span>
+              <h4 class="gallery-item-title">Precision High Skin Fade</h4>
+            </div>
+          </div>
+
+          <!-- Tile 2: Beard -->
+          <div class="gallery-item tall" data-category="beard">
+            <img src="assets/images/gallery_2.png" alt="Beard Trim" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_beard">تصميم اللحية</span>
+              <h4 class="gallery-item-title">Sculpted Contour Beard</h4>
+            </div>
+          </div>
+
+          <!-- Tile 3: Scissor Cut -->
+          <div class="gallery-item" data-category="sciss">
+            <img src="assets/images/gallery_3.png" alt="Scissor Haircut" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_sciss">قصات المقص</span>
+              <h4 class="gallery-item-title">Textured Top Flow</h4>
+            </div>
+          </div>
+
+          <!-- Tile 4: Studio -->
+          <div class="gallery-item" data-category="studio">
+            <img src="assets/images/gallery_5.png" alt="Straight Razor" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_studio">داخل الصالون</span>
+              <h4 class="gallery-item-title">Straight Razor Artistry</h4>
+            </div>
+          </div>
+
+          <!-- Tile 5: Taper Fade -->
+          <div class="gallery-item" data-category="fades">
+            <img src="assets/images/gallery_4.png" alt="Taper Fade" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_fades">تدرجات الفيد</span>
+              <h4 class="gallery-item-title">Low Drop Taper</h4>
+            </div>
+          </div>
+
+          <!-- Tile 6: Crop Fade -->
+          <div class="gallery-item" data-category="fades">
+            <img src="assets/images/gallery_6.png" alt="Modern Crop" class="gallery-item-img" loading="lazy">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-tag" data-i18n="filter_fades">تدرجات الفيد</span>
+              <h4 class="gallery-item-title">Modern Crop Fade</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+      <button class="lightbox-btn lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+      <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+      <div class="lightbox-content">
+        <img src="" alt="Enlarged Haircut" class="lightbox-image" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         6. BARBERS / TEAM SECTION (NO INFORMATION YET)
+         ========================================================================== -->
+    <section class="section-padding" id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="team_tag">فريق العمل</span>
+          <h2 class="section-title" data-i18n="team_title">الحلاقون المحترفون</h2>
+          <p class="section-subtitle" data-i18n="team_subtitle">فريق حلاقة متميز لتقديم أفضل مستويات الخدمة.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Barber 1 Placeholder -->
+          <div class="team-card">
+            <div class="barber-placeholder-wrap">
+              <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon" class="barber-placeholder-icon">
+              <span class="barber-placeholder-tag" data-i18n="team_no_info">NO INFORMATION YET</span>
+            </div>
+            <div class="team-info">
+              <span class="team-role" data-i18n="team_role_placeholder">حلاق</span>
+              <h3 class="team-name" data-i18n="team_no_info">لا توجد معلومات بعد</h3>
+              <p class="team-specialty"><strong data-i18n="team_spec_label">الحالة:</strong> <span
+                  data-i18n="team_status_val">سيتم الإعلان عن التفاصيل لاحقاً</span></p>
+            </div>
+          </div>
+
+          <!-- Barber 2 Placeholder -->
+          <div class="team-card">
+            <div class="barber-placeholder-wrap">
+              <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon" class="barber-placeholder-icon">
+              <span class="barber-placeholder-tag" data-i18n="team_no_info">NO INFORMATION YET</span>
+            </div>
+            <div class="team-info">
+              <span class="team-role" data-i18n="team_role_placeholder">حلاق</span>
+              <h3 class="team-name" data-i18n="team_no_info">لا توجد معلومات بعد</h3>
+              <p class="team-specialty"><strong data-i18n="team_spec_label">الحالة:</strong> <span
+                  data-i18n="team_status_val">سيتم الإعلان عن التفاصيل لاحقاً</span></p>
+            </div>
+          </div>
+
+          <!-- Barber 3 Placeholder -->
+          <div class="team-card">
+            <div class="barber-placeholder-wrap">
+              <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon" class="barber-placeholder-icon">
+              <span class="barber-placeholder-tag" data-i18n="team_no_info">NO INFORMATION YET</span>
+            </div>
+            <div class="team-info">
+              <span class="team-role" data-i18n="team_role_placeholder">حلاق</span>
+              <h3 class="team-name" data-i18n="team_no_info">لا توجد معلومات بعد</h3>
+              <p class="team-specialty"><strong data-i18n="team_spec_label">الحالة:</strong> <span
+                  data-i18n="team_status_val">سيتم الإعلان عن التفاصيل لاحقاً</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. TESTIMONIALS / CLIENT IMPRESSIONS
+         ========================================================================== -->
+    <section class="section-padding" id="testimonials" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="rev_tag">انطباعات الزبائن</span>
+          <h2 class="section-title" data-i18n="rev_title">ثقة نعتز بها</h2>
+          <p class="section-subtitle" data-i18n="rev_subtitle">تجارب حقيقية لعملائنا الذين يثقون في مستوى صالون جوردان.
+          </p>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <!-- Review 1 -->
+          <div class="testimonial-card active">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="test-quote">
+              "The highest standard of barbering precision I have experienced. The skin fade is immaculate and the
+              studio atmosphere is first-class."
+            </blockquote>
+            <div class="test-author">Studio Client</div>
+            <div class="test-badge">Regular Guest</div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="test-quote">
+              "Incredible attention to detail with the hot towel beard sculpt. Professional, punctual, and
+              uncompromising quality."
+            </blockquote>
+            <div class="test-author">VIP Grooming Client</div>
+            <div class="test-badge">Verified Visit</div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote class="test-quote">
+              "The scissors work and hairline precision are unmatched. Jordan Saloon represents the pinnacle of modern
+              barbering."
+            </blockquote>
+            <div class="test-author">Executive Client</div>
+            <div class="test-badge">Signature Cut</div>
+          </div>
+
+          <!-- Controls -->
+          <div class="test-controls">
+            <button class="test-arrow-btn" id="testPrevBtn" aria-label="Previous Review">&#10094;</button>
+            <button class="test-arrow-btn" id="testNextBtn" aria-label="Next Review">&#10095;</button>
+          </div>
+        </div>
+
+        <!-- Add Review Action Button (Single Review Enforcement) -->
+        <div class="testimonials-actions">
+          <button type="button" class="btn btn-outline" id="btnOpenReviewModal" data-i18n="rev_btn_add">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-inline-end: 0.5rem;">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            <span id="btnReviewText" data-i18n="rev_btn_add_text">أضف تقييمك</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Client Review Modal (Enforces One Review Per Person) -->
+    <div class="review-modal-overlay" id="reviewModal" role="dialog" aria-modal="true"
+      aria-labelledby="reviewModalTitle">
+      <div class="review-modal-card">
+        <button class="review-modal-close" id="reviewModalClose" aria-label="Close Review Modal">&times;</button>
+        <span class="section-tag" data-i18n="rev_modal_tag">تقييم تجربة العميل</span>
+        <h3 class="review-modal-title" id="reviewModalTitle" data-i18n="rev_modal_title">شاركنا رأيك في صالون جوردان
+        </h3>
+        <p class="review-modal-sub" data-i18n="rev_modal_sub">رأيك يهمنا ويساعدنا على تقديم أرقى مستويات الخدمة. (يُسمح
+          بتقييم واحد فقط لكل زائر)</p>
+
+        <form id="reviewForm" class="review-form">
+          <!-- Star Rating Selector -->
+          <div class="form-group">
+            <label class="form-label" data-i18n="rev_rating_label">التقييم:</label>
+            <div class="star-rating-selector" id="starRatingSelector">
+              <button type="button" class="star-btn active" data-star="1" aria-label="1 Star">&#9733;</button>
+              <button type="button" class="star-btn active" data-star="2" aria-label="2 Stars">&#9733;</button>
+              <button type="button" class="star-btn active" data-star="3" aria-label="3 Stars">&#9733;</button>
+              <button type="button" class="star-btn active" data-star="4" aria-label="4 Stars">&#9733;</button>
+              <button type="button" class="star-btn active" data-star="5" aria-label="5 Stars">&#9733;</button>
+            </div>
+            <input type="hidden" id="reviewRatingVal" value="5">
+          </div>
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="reviewAuthor" class="form-label" data-i18n="rev_name_label">اسمك الكريم:</label>
+            <input type="text" id="reviewAuthor" class="form-input" placeholder="أدخل اسمك"
+              data-i18n-placeholder="placeholder_name" required maxlength="50">
+          </div>
+
+          <!-- Visit Type -->
+          <div class="form-group">
+            <label for="reviewBadge" class="form-label" data-i18n="rev_type_label">نوع الزيارة / الخدمة:</label>
+            <input type="text" id="reviewBadge" class="form-input" placeholder="مثال: قصة فيد / باقة VIP / زائر دائم"
+              data-i18n-placeholder="placeholder_rev_type" required maxlength="40">
+          </div>
+
+          <!-- Experience Feedback -->
+          <div class="form-group">
+            <label for="reviewQuote" class="form-label" data-i18n="rev_text_label">تجربتك في الصالون:</label>
+            <textarea id="reviewQuote" class="form-textarea" placeholder="اكتب رأيك وتجربتك في مستوى الحلاقة والخدمة..."
+              data-i18n-placeholder="placeholder_rev_quote" required minlength="8" maxlength="350"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;"
+            data-i18n="rev_btn_submit">إرسال التقييم</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         8. BOOKING SUITE (STRICT +964 VALIDATION & ARABIC WHATSAPP DISPATCH)
+         ========================================================================== -->
+    <section class="section-padding" id="booking">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="book_tag">حجز المواعيد</span>
+          <h2 class="section-title" data-i18n="book_title">احجز جلستك الخاصة</h2>
+          <p class="section-subtitle" data-i18n="book_subtitle">حدد الخدمة والوقت المناسب لك لإرسال الحجز مباشرة عبر
+            واتساب.</p>
+        </div>
+
+        <div class="booking-container">
+          <div class="booking-layout">
+            <!-- Left Booking Inputs Form -->
+            <form class="booking-form-col" id="bookingForm" onsubmit="return false;">
+              <!-- 1. Service Selection -->
+              <div class="form-group">
+                <label for="bookingService" class="form-label" data-i18n="step1_title">١. اختر الخدمة</label>
+                <select id="bookingService" class="form-select" required>
+                  <option value="classic_haircut" selected data-i18n="srv_hair1_name">قصة شعر كلاسيكية فاخرة</option>
+                  <option value="skin_fade" data-i18n="srv_hair2_name">سكين فيد احترافي (Skin Fade)</option>
+                  <option value="taper_fade" data-i18n="srv_hair3_name">تيبر فيد عصري (Taper Fade)</option>
+                  <option value="scissor_cut" data-i18n="srv_hair4_name">قص بالمقص اليدوي فقط</option>
+                  <option value="beard_sculpt" data-i18n="srv_beard1_name">نحت وتشذيب اللحية</option>
+                  <option value="hot_towel_shave" data-i18n="srv_beard2_name">حلاقة ملكية بالمنشفة الساخنة</option>
+                  <option value="razor_lineup" data-i18n="srv_beard3_name">تحديد حواف اللحية بالموس</option>
+                  <option value="jordan_royal" data-i18n="srv_vip1_name">باقة جوردان الملكية</option>
+                  <option value="vip_grooming" data-i18n="srv_vip2_name">جلسة العناية الشاملة VIP</option>
+                  <option value="special_occasion" data-i18n="srv_vip3_name">تصفيف المناسبات الخاصة</option>
+                </select>
+              </div>
+
+              <!-- 2. Barber Selection (No Information Yet) -->
+              <div class="form-group">
+                <label for="bookingBarber" class="form-label" data-i18n="step2_title">٢. تحديد الحلاق</label>
+                <select id="bookingBarber" class="form-select">
+                  <option value="any" selected data-i18n="barber_no_info">لا توجد معلومات بعد (أي حلاق متاح)</option>
+                </select>
+              </div>
+
+              <!-- 3. Date & Time Selection -->
+              <div class="form-group">
+                <label for="bookingDate" class="form-label" data-i18n="step3_title">٣. حدد التاريخ والوقت</label>
+                <input type="date" id="bookingDate" class="form-input" required>
+
+                <div class="time-slots-grid" style="margin-top: 0.75rem;">
+                  <button type="button" class="time-slot-btn" data-time="10:00 AM">10:00 AM</button>
+                  <button type="button" class="time-slot-btn selected" data-time="11:00 AM">11:00 AM</button>
+                  <button type="button" class="time-slot-btn" data-time="12:30 PM">12:30 PM</button>
+                  <button type="button" class="time-slot-btn" data-time="02:00 PM">02:00 PM</button>
+                  <button type="button" class="time-slot-btn" data-time="03:30 PM">03:30 PM</button>
+                  <button type="button" class="time-slot-btn" data-time="05:00 PM">05:00 PM</button>
+                  <button type="button" class="time-slot-btn" data-time="06:30 PM">06:30 PM</button>
+                  <button type="button" class="time-slot-btn" data-time="08:00 PM">08:00 PM</button>
+                </div>
+              </div>
+
+              <!-- 4. Client Details (Strict +964 Iraqi Phone Validation) -->
+              <div class="form-group">
+                <label for="bookingName" class="form-label" data-i18n="step4_title">٤. بياناتك الشخصية</label>
+                <input type="text" id="bookingName" class="form-input" placeholder="أدخل اسمك الكريم"
+                  data-i18n-placeholder="placeholder_name" required>
+
+                <input type="tel" id="bookingPhone" class="form-input" style="margin-top: 0.5rem;"
+                  placeholder="07XXXXXXXXX أو +9647XXXXXXXXX" data-i18n-placeholder="placeholder_phone"
+                  pattern="^(\+964|00964|964)?0?7[3-9][0-9]{8}$" required>
+                <p class="phone-error-msg" id="phoneErrorMsg" data-i18n="phone_validation_error">يرجى إدخال رقم هاتف
+                  عراقي صالح يبدأ بـ +9647 أو 07 (10-11 رقماً).</p>
+
+                <textarea id="bookingNotes" class="form-textarea" style="margin-top: 0.5rem;"
+                  placeholder="أي تفاصيل أو رغبات خاصة..." data-i18n-placeholder="placeholder_notes"></textarea>
+              </div>
+            </form>
+
+            <!-- Right Live Summary Card -->
+            <div class="booking-summary-card">
+              <div>
+                <h3 class="summary-title" data-i18n="summary_title">ملخص الموعد</h3>
+                <div class="summary-rows">
+                  <div class="summary-row">
+                    <span class="summary-label" data-i18n="summary_service">الخدمة:</span>
+                    <span class="summary-value" id="sumService">قصة شعر كلاسيكية فاخرة</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label" data-i18n="summary_barber">الحلاق:</span>
+                    <span class="summary-value" id="sumBarber" data-i18n="barber_no_info">لا توجد معلومات بعد</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-label" data-i18n="summary_datetime">الموعد:</span>
+                    <span class="summary-value" id="sumDateTime">اليوم @ 11:00 AM</span>
+                  </div>
+                </div>
+
+                <div class="summary-price-box">
+                  <span class="summary-price-title" data-i18n="summary_price">السعر التقديري:</span>
+                  <span class="summary-price-val" id="sumPrice" data-i18n="price_unknown">لم يُحدد بعد</span>
+                </div>
+              </div>
+
+              <div class="booking-actions">
+                <button type="button" class="btn btn-gold" id="btnSubmitWhatsapp" data-i18n="btn_submit_booking">إرسال
+                  الحجز عبر واتساب</button>
+                <p class="booking-disclaimer" data-i18n="booking_note">النقر على الزر سيفتح محادثة مباشرة عبر واتساب مع
+                  الرقم 07722820101 بتفاصيل موعدك باللغة العربية.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. INSTAGRAM / SOCIAL SHOWCASE
+         ========================================================================== -->
+    <section class="section-padding" id="social" style="background: var(--bg-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="social_tag">تابع أعمالنا اليومية</span>
+          <h2 class="section-title" data-i18n="social_title">إنستغرام @JORDANSALOON</h2>
+          <p class="section-subtitle" data-i18n="social_subtitle">شاهد أحدث القصات وأجواء الصالون عبر حسابنا الرسمي على
+            إنستغرام.</p>
+        </div>
+
+        <div class="social-grid">
+          <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" class="social-item">
+            <img src="assets/images/gallery_1.png" alt="Instagram Post 1" class="social-item-img" loading="lazy">
+            <div class="social-item-overlay">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" class="social-item">
+            <img src="assets/images/gallery_2.png" alt="Instagram Post 2" class="social-item-img" loading="lazy">
+            <div class="social-item-overlay">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" class="social-item">
+            <img src="assets/images/gallery_3.png" alt="Instagram Post 3" class="social-item-img" loading="lazy">
+            <div class="social-item-overlay">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" class="social-item">
+            <img src="assets/images/gallery_6.png" alt="Instagram Post 4" class="social-item-img" loading="lazy">
+            <div class="social-item-overlay">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="https://www.instagram.com/saloon_jordan?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-i18n="social_btn">متابعة على
+            إنستغرام</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT & STUDIO LOCATION (WITH GOOGLE MAPS LINK)
+         ========================================================================== -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact_tag">الموقع والزيارات</span>
+          <h2 class="section-title" data-i18n="contact_title">تفضل بزيارة صالون جوردان</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">تفضل بزيارتنا لتجربة حلاقة استثنائية.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Address Card (Linked to https://maps.app.goo.gl/wmgmFzppbNGvKYCY6) -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="contact-card-title" data-i18n="contact_card_address">موقع الصالون</h3>
+            <p class="contact-card-text" style="margin-bottom: 1rem;" data-i18n="contact_addr_val">انقر أدناه لفتح
+              الموقع الرسمي على خرائط Google</p>
+            <a href="https://maps.app.goo.gl/wmgmFzppbNGvKYCY6" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm" data-i18n="contact_btn_directions">فتح الموقع على الخريطة</a>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="contact-card-title" data-i18n="contact_card_hours">أوقات العمل</h3>
+            <p class="contact-card-text" data-i18n="contact_hours_val1">مفتوح يومياً</p>
+          </div>
+
+          <!-- Phone & WhatsApp Card (07722820101) -->
+          <div class="contact-card">
+            <div class="contact-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="contact-card-title" data-i18n="contact_card_phone">الهاتف والواتساب المباشر</h3>
+            <p class="contact-card-text"
+              style="font-size: 1.15rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.75rem;">
+              07722820101</p>
+            <a href="https://wa.me/9647722820101" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline btn-sm">واتساب مباشر</a>
+          </div>
+        </div>
+
+        <!-- Stylized Map Embed / Location Card with Google Maps link -->
+        <div class="map-wrapper"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle, #17171c 0%, #0c0c0e 100%); text-align: center; padding: 2rem;">
+          <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon"
+            style="width: 56px; height: 56px; margin-bottom: 1rem; opacity: 0.85;">
+          <h3 style="font-family: var(--font-serif); font-size: 1.4rem; color: #ffffff; margin-bottom: 0.5rem;"
+            data-i18n="contact_title">صالون جوردان</h3>
+          <p style="color: var(--text-secondary); max-width: 480px; margin-bottom: 1.5rem;"
+            data-i18n="contact_addr_val">انقر أدناه لفتح الموقع الرسمي على خرائط Google</p>
+          <a href="https://maps.app.goo.gl/wmgmFzppbNGvKYCY6" target="_blank" rel="noopener noreferrer"
+            class="btn btn-gold" data-i18n="contact_btn_directions">فتح الموقع على الخريطة &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. PREMIUM DARK FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/logo/jordan_saloon_mark.svg" alt="Jordan Saloon" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-name">JORDAN SALOON</span>
+              <span class="brand-sub" data-i18n="hero_brand_sub">صالون جوردان</span>
+            </div>
+          </a>
+          <p data-i18n="footer_desc">صالون جوردان هو عنوان الأناقة والحلاقة الرجالية الراقية، يجمع بين دقة الأداء وأعلى
+            مستويات الراحة.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_quick_links">روابط سريعة</h4>
+          <div class="footer-links">
+            <a href="#hero" class="footer-link" data-i18n="nav_home">الرئيسية</a>
+            <a href="#about" class="footer-link" data-i18n="nav_about">عن الصالون</a>
+            <a href="#services" class="footer-link" data-i18n="nav_services">الخدمات</a>
+            <a href="#transformation" class="footer-link" data-i18n="nav_transformation">التحولات</a>
+            <a href="#gallery" class="footer-link" data-i18n="nav_gallery">معرض الصور</a>
+            <a href="#team" class="footer-link" data-i18n="nav_team">الحلاقون</a>
+            <a href="#contact" class="footer-link" data-i18n="nav_contact">تواصل معنا</a>
+          </div>
+        </div>
+
+        <!-- Signature Services -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_services">أبرز الخدمات</h4>
+          <div class="footer-links">
+            <a href="#services" class="footer-link" data-i18n="srv_hair2_name">سكين فيد احترافي</a>
+            <a href="#services" class="footer-link" data-i18n="srv_hair1_name">قصة شعر كلاسيكية</a>
+            <a href="#services" class="footer-link" data-i18n="srv_beard1_name">نحت وتشذيب اللحية</a>
+            <a href="#services" class="footer-link" data-i18n="srv_beard2_name">حلاقة بالمنشفة الساخنة</a>
+            <a href="#services" class="footer-link" data-i18n="srv_vip1_name">باقة جوردان الملكية</a>
+          </div>
+        </div>
+
+        <!-- Location, Phone & Language -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_location_title">الموقع والتواصل</h4>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6;">
+            📞 <strong style="color: #ffffff;">07722820101</strong>
+          </p>
+          <p style="margin-top: 0.5rem;">
+            <a href="https://maps.app.goo.gl/wmgmFzppbNGvKYCY6" target="_blank" rel="noopener noreferrer"
+              style="color: var(--accent-gold); font-size: 0.85rem; text-decoration: underline;"
+              data-i18n="contact_btn_directions">فتح الموقع على خرائط Google</a>
+          </p>
+
+          <div style="margin-top: 1.5rem;">
+            <div class="lang-switcher" style="display: inline-flex;">
+              <button class="lang-btn" data-lang="en">EN</button>
+              <button class="lang-btn active" data-lang="ar">العربية</button>
+              <button class="lang-btn" data-lang="ku">کوردی</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <span>&copy; 2026 <span data-i18n="footer_rights">صالون جوردان. جميع الحقوق محفوظة.</span></span>
+        <a href="#hero" class="back-to-top-btn" id="backToTopBtn">
+          <span data-i18n="footer_back_to_top">العودة للأعلى</span> &uarr;
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
